@@ -9219,21 +9219,6 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _jquery2.default)(function () {
-
-    var template = '<article>' + '<img src=":img:" alt=":imgAlt:">' + '<div>' + '<h1>:name:</h1>' + '<p>:description:</p>' + '</div>' + '</article>';
-    _jquery2.default.ajax({
-        url: 'http://api.tvmaze.com/shows',
-        success: function success(shows, textStatus, xhr) {
-            var $tvShowsContainter = (0, _jquery2.default)('#app-container').find('#juego');
-            $tvShowsContainter.find('.loader').remove();
-            shows.forEach(function (show) {
-                var article = template.replace(':name:', show.name).replace(':img:', show.image.medium).replace(':description:', show.summary).replace(':imgAlt:', show.name + ' logo');
-
-                $tvShowsContainter.append((0, _jquery2.default)(article));
-            });
-        }
-    });
-});
+(0, _jquery2.default)(function () {});
 
 },{"jquery":1}]},{},[2]);
