@@ -9219,6 +9219,22 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _jquery2.default)(function () {});
+(0, _jquery2.default)(function () {
+    var header = (0, _jquery2.default)('header');
+    var i = 0;
+    var imagen = ["url('imagenes/fondo rojo 1.png')", "url('imagenes/fondo rojo 3.png')", "url('imagenes/fondo rojo 4.png')"];
+
+    var cambiarFondo = function cambiarFondo() {
+        if (i < 2) {
+            header.css('background-image', imagen[i]);
+            i++;
+        } else {
+            header.css('background-image', imagen[2]);
+            i = 0;
+        }
+    };
+    cambiarFondo();
+    setInterval(cambiarFondo, 4000);
+});
 
 },{"jquery":1}]},{},[2]);
