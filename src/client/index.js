@@ -1,6 +1,8 @@
 import $ from 'jquery'
 
 $(function(){
+
+//CAMBIO DE FOTOS EN EL HEADER
 var header = $('header')
 var i = 0
 var imagen = ["url('imagenes/fondo rojo 1.png')", "url('imagenes/fondo rojo 3.png')", "url('imagenes/fondo rojo 4.png')"]
@@ -17,6 +19,19 @@ var cambiarFondo = function(){
 cambiarFondo()
 setInterval(cambiarFondo, 4000)
 
+//BOTON DE REDES SOCIALEs 
+    var compartirEstado = 1
+
+$('#compartir').click(function(){
+    if(compartirEstado === 0){
+        $('#social').hide(200)
+        compartirEstado = 1
+    }else{
+        $('#social').show(200)
+        compartirEstado = 0
+    }
+    })
+    
 })
 
     

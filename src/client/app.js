@@ -9220,6 +9220,8 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery2.default)(function () {
+
+    //CAMBIO DE FOTOS EN EL HEADER
     var header = (0, _jquery2.default)('header');
     var i = 0;
     var imagen = ["url('imagenes/fondo rojo 1.png')", "url('imagenes/fondo rojo 3.png')", "url('imagenes/fondo rojo 4.png')"];
@@ -9235,6 +9237,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     };
     cambiarFondo();
     setInterval(cambiarFondo, 4000);
+
+    //BOTON DE REDES SOCIALEs
+    var compartirEstado = 1;
+
+    (0, _jquery2.default)('#compartir').click(function () {
+        if (compartirEstado === 0) {
+            (0, _jquery2.default)('#social').hide(200);
+            compartirEstado = 1;
+        } else {
+            (0, _jquery2.default)('#social').show(200);
+            compartirEstado = 0;
+        }
+    });
 });
 
 },{"jquery":1}]},{},[2]);
