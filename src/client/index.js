@@ -4,7 +4,7 @@ import page from 'page'
 $(function(){
 let i = 0
 const imagen = ["url('imagenes/fondo rojo 1.png')", "url('imagenes/fondo rojo 3.png')", "url('imagenes/fondo rojo 4.png')"]
-let compartirEstado = 1
+
 let mapaVeranillo = `<article id="mapaVeranillo" class="mapas"> 
            <img src="imagenes/mapa veranillo.png" alt="Veranillo">
             <a class="punto" id="ptFlamboyan"></a>
@@ -23,9 +23,11 @@ function cambiarFondo(){
     }
 }
 cambiarFondo()
-setInterval(cambiarFondo, 4000)
+setInterval(cambiarFondo, 5000)
 
 //BOTON DE REDES SOCIALEs 
+var compartirEstado = 1
+
 $('#compartir').click(function(){
     if(compartirEstado === 0){
         $('#social').hide(200)

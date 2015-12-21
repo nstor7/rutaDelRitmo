@@ -10339,7 +10339,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _jquery2.default)(function () {
     var i = 0;
     var imagen = ["url('imagenes/fondo rojo 1.png')", "url('imagenes/fondo rojo 3.png')", "url('imagenes/fondo rojo 4.png')"];
-    var compartirEstado = 1;
+
     var mapaVeranillo = '<article id="mapaVeranillo" class="mapas"> \n           <img src="imagenes/mapa veranillo.png" alt="Veranillo">\n            <a class="punto" id="ptFlamboyan"></a>\n       </article>';
     var header = (0, _jquery2.default)('#header');
     var ptBarrio = (0, _jquery2.default)('#ptBarrio');
@@ -10355,9 +10355,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         }
     }
     cambiarFondo();
-    setInterval(cambiarFondo, 4000);
+    setInterval(cambiarFondo, 5000);
 
     //BOTON DE REDES SOCIALEs
+    var compartirEstado = 1;
+
     (0, _jquery2.default)('#compartir').click(function () {
         if (compartirEstado === 0) {
             (0, _jquery2.default)('#social').hide(200);
