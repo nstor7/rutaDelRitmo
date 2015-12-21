@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Amatic+SC:400,700');
 body
     margin 0
     background white
+    font-family 'Open Sans', sans-serif
+    font-weight 300
     header 
         width 100%
         height 100vh
@@ -18,6 +21,12 @@ body
             font-size 1.5em
             line-height 1.5em
             letter-spacing 2px
+#irMapa
+    visibility visible
+    width 130px
+    height auto
+    position absolute
+    left 150px
 #logo
     visibility visible
     position relative
@@ -25,11 +34,38 @@ body
     height auto
     margin 50px 0 0 40px
 #juego
-    background url('imagenes/fondo mapa panama.png')
+    background-image url('imagenes/fondo pergamino 2.png')
     background-size 100%
     width 100%
     height 720px
     transition 0.5s ease-in opacity
+    position relative
+    margin-bottom 50px
+.mapas
+    height 600px
+    display inline-block
+    position absolute
+    bottom 0
+    img
+        max-height 100%
+    .ventana
+        height 100px
+        width auto
+        position absolute
+        top 150px
+        left 300px
+    .punto
+        background black
+        border-radius 50%
+        width 20px
+        height 20px
+        position absolute
+    #ptBarrio
+        top 240px
+        left 300px
+    #ptFlamboyan
+        top 320px
+        left 90px
 footer
     background #121212
     width 100%
@@ -62,7 +98,7 @@ footer
                         margin 0
                         line-height 50px
                         font-size 1em
-                        font-family helvetica
+                        font-family 'Open Sans', sans-serif
 #aporte
     height 20px
     width 55px
