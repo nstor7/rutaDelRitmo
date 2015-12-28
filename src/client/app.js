@@ -10338,9 +10338,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _jquery2.default)(function () {
     var i = 0;
-    var imagen = ["url('imagenes/fondo rojo 1.png')", "url('imagenes/fondo rojo 3.png')", "url('imagenes/fondo rojo 4.png')"];
+    var imagen = ["url('imagenes/fondo rojo 1.jpg')", "url('imagenes/fondo rojo 3.jpg')", "url('imagenes/fondo rojo 4.jpg')"];
 
-    var mapaVeranillo = '<article id="mapaVeranillo" class="mapas"> \n           <img src="imagenes/mapa veranillo.png" alt="Veranillo">\n            <a class="punto" id="ptFlamboyan"></a>\n       </article>';
+    var mapaVeranillo = '<article id="mapaVeranillo" class="mapas"> \n           <img src="imagenes/mapa veranillo.jpg" alt="Veranillo">\n            <a class="punto" id="ptFlamboyan"></a>\n       </article>';
     var header = (0, _jquery2.default)('#header');
     var ptBarrio = (0, _jquery2.default)('#ptBarrio');
     var juego = (0, _jquery2.default)('#juego');
@@ -10387,7 +10387,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         juego.append(mapaVeranillo);
         next();
     }, function (ctx, next) {
-        juego.css('background-image', 'url("imagenes/fondo pergamino.png")');
+        juego.css('background-image', 'url("imagenes/fondo pergamino.jpg")');
     });
     (0, _page2.default)();
 });

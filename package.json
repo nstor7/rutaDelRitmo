@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "rutadelritmo",
   "version": "1.0.0",
   "description": "Aplicación web con interactividad para mostrar mediante un juego los documentales y tomas adicionales del proyecto Ruta del Ritmo",
@@ -19,8 +19,8 @@
     "copy-files": "cp src/client/index.css public/index.css && cp src/client/index.html public/index.html && cp src/client/app.js  public/app.js && cp -r src/client/imagenes public/imagenes",
     "build": "npm run public && npm run build-js && npm run copy-files",
     "serve": "NODE_PATH=. babel-node src/server --presets es2015",
-    "jorvan": "babel-node src/server --presets es2015",
     "start": "npm run build && npm run serve",
+    "jorvan": "babel-node src/server --presets es2015",
     "stack": "open ../../../../../Applications/evernote.app && open ../../../../../Applications/Wunderlist.app && open ../../../../../Applications/Brackets.app && open ../../../../../Applications/GitHubDesktop.app"
   },
   "author": "Néstor Ibarra y Jorvan Dorcy",

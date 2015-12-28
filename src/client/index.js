@@ -3,10 +3,10 @@ import page from 'page'
 
 $(function(){
 let i = 0
-const imagen = ["url('imagenes/fondo rojo 1.png')", "url('imagenes/fondo rojo 3.png')", "url('imagenes/fondo rojo 4.png')"]
+const imagen = ["url('imagenes/fondo rojo 1.jpg')", "url('imagenes/fondo rojo 3.jpg')", "url('imagenes/fondo rojo 4.jpg')"]
 
 let mapaVeranillo = `<article id="mapaVeranillo" class="mapas"> 
-           <img src="imagenes/mapa veranillo.png" alt="Veranillo">
+           <img src="imagenes/mapa veranillo.jpg" alt="Veranillo">
             <a class="punto" id="ptFlamboyan"></a>
        </article>`
 var header = $('#header')
@@ -55,7 +55,7 @@ page('/barrio', function(ctx, next){
      juego.append(mapaVeranillo)
      next()
 }, function(ctx, next){
-    juego.css('background-image', 'url("imagenes/fondo pergamino.png")')
+    juego.css('background-image', 'url("imagenes/fondo pergamino.jpg")')
 })
 page()
 })
