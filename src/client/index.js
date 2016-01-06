@@ -3,7 +3,7 @@ import page from 'page'
 
 $(function(){
 let i = 0
-const imagen = ["url('imagenes/fondo rojo 1.jpg')", "url('imagenes/fondo rojo 3.jpg')", "url('imagenes/fondo rojo 4.jpg')"]
+const imagen = ["url('imagenes/rrHeaderFondo1.jpg')", "url('imagenes/rrHeaderFondo2.jpg')", "url('imagenes/rrHeaderFondo3.jpg')"]
 
 let mapaVeranillo = `<article id="mapaVeranillo" class="mapas"> 
            <img src="imagenes/mapa veranillo.jpg" alt="Veranillo">

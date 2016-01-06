@@ -10338,7 +10338,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _jquery2.default)(function () {
     var i = 0;
-    var imagen = ["url('imagenes/fondo rojo 1.jpg')", "url('imagenes/fondo rojo 3.jpg')", "url('imagenes/fondo rojo 4.jpg')"];
+    var imagen = ["url('imagenes/rrHeaderFondo1.jpg')", "url('imagenes/rrHeaderFondo2.jpg')", "url('imagenes/rrHeaderFondo3.jpg')"];
 
     var mapaVeranillo = '<article id="mapaVeranillo" class="mapas"> \n           <img src="imagenes/mapa veranillo.jpg" alt="Veranillo">\n            <a class="punto" id="ptFlamboyan"></a>\n       </article>';
     var header = (0, _jquery2.default)('#header');
