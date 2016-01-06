@@ -20,7 +20,7 @@
     "build": "npm run public && npm run build-js && npm run copy-files",
     "serve": "NODE_PATH=. babel-node src/server --presets es2015",
     "start": "npm run build && npm run serve",
-    "jorvan": "babel-node src/server --presets es2015",
+    "jorvan": "cd Documents/GitHub/RutaDelRitmo && node src/server/jorvan.js",
     "stack": "open ../../../../../Applications/evernote.app && open ../../../../../Applications/Wunderlist.app && open ../../../../../Applications/Brackets.app && open ../../../../../Applications/GitHubDesktop.app"
   },
   "author": "Néstor Ibarra y Jorvan Dorcy",
